@@ -1,0 +1,46 @@
+@import url("../css/style.css");
+.header {
+  margin-top: 50px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  text-align: center;
+  font-size: 125px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 10px;
+  color: #000;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+@media (max-width: 373px) {
+  .header .header__logo {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__logo {
+    font-size: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__logo {
+    font-size: 60px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header__logo {
+    font-size: 40px;
+  }
+}

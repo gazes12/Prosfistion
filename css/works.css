@@ -1,0 +1,132 @@
+.works__container {
+  max-width: 100%;
+}
+.works__text:not(:last-child) {
+  margin-bottom: 250px;
+}
+.works__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.works__item {
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  -webkit-animation: 2s spin infinite linear;
+          animation: 2s spin infinite linear;
+  -webkit-animation: 2s opacity infinite linear;
+          animation: 2s opacity infinite linear;
+}
+.works__item:hover .works__content {
+  opacity: 1;
+}
+@-webkit-keyframes opacity {
+  from {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.works__photo img {
+  max-width: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.works__content {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  background: rgba(205, 67, 67, 0.9);
+}
+.works__title {
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+}
+.works__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+.works__description {
+  font-size: 45px;
+}
+
+@media (max-width: 767.98px) {
+  .works ._title:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  .works__title {
+    font-size: 45px;
+  }
+  .works__title:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .works__description {
+    font-size: 25px;
+  }
+}
+@media (max-width: 479.98px) {
+  .works ._title:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .works__title {
+    font-size: 25px;
+  }
+  .works__title:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .works__description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 330.98px) {
+  .works__title {
+    font-size: 15px;
+  }
+  .works__title:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .works__description {
+    font-size: 8px;
+  }
+}

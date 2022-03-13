@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap");
+@import url("../css/header.css");
+@import url("../css/create-site.css");
+@import url("../css/footer.css");
+@import url("../css/works.css");
+@import url("../css/items.css");
+@import url("../css/popup.css");
+@import url("../css/bust.css");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  background: #CDCDCD;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+body {
+  position: relative;
+  top: -500%;
+  -webkit-transition: top 1s linear;
+  transition: top 1s linear;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper:target .popup {
+  top: 0;
+}
